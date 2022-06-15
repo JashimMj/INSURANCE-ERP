@@ -1,0 +1,25 @@
+{%extends 'index.html'%}
+{%block contant%}
+{%load static%}
+<style>
+    a{
+    text-decoration: none;
+    color: inherit;}
+    img.abc {
+    width: 65px;
+}
+b.bs{
+font-weight: 500;
+font-size:20px;}
+</style>
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="text-align:center;">
+        <a href="{%url 'branch_info_show'%}">
+           <div class="card" style="border-style: outset; background-color: #FFDBB6;">
+                <div style="text-align:left; padding:10px;"><img src="{%static 'my/image/fl.png'%}" alt="" class="abc"><span ><b class="bs">Branch Information</b></span></div>
+
+            </div>
+        </a>
+    </div>
+</div>
+{%endblock%}

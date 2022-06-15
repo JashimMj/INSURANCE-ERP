@@ -1,0 +1,16 @@
+$(document).ready(function(){
+ e.preventDefault();
+   $.ajax({
+   url:"",
+   type:"",
+   dataType:"json",
+   data:{
+   csrfmiddlewaretoken: '{{ csrf_token }}',
+   
+   },
+   success:function(response){
+   }
+   
+   });
+    
+});

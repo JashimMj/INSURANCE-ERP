@@ -1,0 +1,114 @@
+{%extends 'index.html'%}
+{%block contant%}
+{%load static%}
+<style>
+    a{
+    text-decoration: none;
+    color: inherit;}
+
+
+</style>
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="{%url 'admin_dashboard'%}">
+            <div class="card" style="border-style: outset; background-color: #FFDBB6;">
+                <div style="min-height:7.5rem; background-image: url('{%static 'my/image/admin.png'%}');background-position: center;background-repeat: no-repeat;background-size: cover; background-size: 150px;"></div>
+                <h5 style="text-align:center;">Software Admin</h5>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="">
+            <div class="card" style="border-style: outset; background-color: #FFDBB6;">
+                <div style="min-height:7.5rem; background-image: url('{%static 'my/image/ins.png'%}');background-position: center;background-repeat: no-repeat;background-size: cover; background-size: 150px;"></div>
+                <h5 style="text-align:center;">Insurance</h5>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="">
+            <div class="card" style="border-style: outset; background-color: #FFDBB6;">
+                <div style="min-height:7.5rem; background-image: url('{%static 'my/image/rep.png'%}');background-position: center;background-repeat: no-repeat;background-size: cover; background-size: 150px;"></div>
+                <h5 style="text-align:center;">Report Insurance</h5>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="">
+            <div class="card" style="border-style: outset; background-color: #FFDBB6;">
+                <div style="min-height:7.5rem; background-image: url('{%static 'my/image/claim.png'%}');background-position: center;background-repeat: no-repeat;background-size: cover; background-size: 150px;"></div>
+                <h5 style="text-align:center;">Claim</h5>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="">
+            <div class="card" style="border-style: outset; background-color: #FFDBB6;">
+                <div style="min-height:7.5rem; background-image: url('{%static 'my/image/reins.png'%}');background-position: center;background-repeat: no-repeat;background-size: cover; background-size: 150px;"></div>
+                <h5 style="text-align:center;">Re-Insurance</h5>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="">
+            <div class="card" style="border-style: outset; background-color: #FFDBB6;">
+                <div style="min-height:7.5rem; background-image: url('{%static 'my/image/accounts.png'%}');background-position: center;background-repeat: no-repeat;background-size: cover; background-size: 150px;"></div>
+                <h5 style="text-align:center;">Accounts</h5>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="">
+            <div class="card" style="border-style: outset; background-color: #FFDBB6;">
+                <div style="min-height:7.5rem; background-image: url('{%static 'my/image/pay.png'%}');background-position: center;background-repeat: no-repeat;background-size: cover; background-size: 150px;"></div>
+                <h5 style="text-align:center;">Payroll</h5>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="">
+            <div class="card" style="border-style: outset; background-color: #FFDBB6;">
+                <div style="min-height:7.5rem; background-image: url('{%static 'my/image/fdr.png'%}');background-position: center;background-repeat: no-repeat;background-size: cover; background-size: 150px;"></div>
+                <h5 style="text-align:center;">FDR</h5>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="">
+            <div class="card" style="border-style: outset; background-color: #FFDBB6;">
+                <div style="min-height:7.5rem; background-image: url('{%static 'my/image/pf.png'%}');background-position: center;background-repeat: no-repeat;background-size: cover; background-size: 150px;"></div>
+                <h5 style="text-align:center;">Provident Fund</h5>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="">
+            <div class="card" style="border-style: outset; background-color: #FFDBB6;">
+                <div style="min-height:7.5rem; background-image: url('{%static 'my/image/hr.png'%}');background-position: center;background-repeat: no-repeat;background-size: cover; background-size: 150px;"></div>
+                <h5 style="text-align:center;">Human Resource</h5>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="">
+            <div class="card" style="border-style: outset; background-color:#FFDBB6;">
+                <div style="min-height:7.5rem; background-image: url('{%static 'my/image/ass.png'%}');background-position: center;background-repeat: no-repeat;background-size: cover; background-size: 150px;"></div>
+                <h5 style="text-align:center;">Fixed Asset</h5>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="">
+        <div class="card" style="border-style: outset; background-color: #FFDBB6;">
+            <div style="min-height:7.5rem; background-image: url('{%static 'my/image/in.png'%}');background-position: center;background-repeat: no-repeat;background-size: cover; background-size: 150px;"></div>
+            <h5 style="text-align:center;">Inventory</h5>
+        </div>
+            </a>
+    </div>
+
+
+</div>
+
+</div>
+
+{%endblock%}

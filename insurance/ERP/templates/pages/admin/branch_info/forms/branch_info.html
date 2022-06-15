@@ -1,0 +1,110 @@
+{%extends 'index.html'%}
+{%block contant%}
+{%load static%}
+<div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                <strong>Branch</strong> Information</h2>
+
+                        </div>
+                        <div class="body">
+
+                            <form id="save" >
+                                <div id="alarts"></div>
+                            <div class="row clearfix">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Branch Name" id="b_name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Branch Short Name" id="b_short">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="validate form-control" placeholder="Branch Address" id="b_address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control datetimepicker flatpickr-input" placeholder="Branch Phone No." id="b_phone">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Branch Fax No." id="b_fax">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="email" class="form-control" placeholder="Branch Email" id="b_email">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                        </div>
+                            <div class="col-lg-12 p-t-20 text-center">
+                                <button type="submit" class="btn btn-primary waves-effect m-r-15" >Save</button>
+                                <button type="button" class="btn btn-danger waves-effect">Cancel</button>
+                            </div>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<script>
+    $('#save').on('submit',function(e){
+alert("Hello! I am an alert box!!");
+ e.preventDefault();
+   $.ajax({
+  url:"{%url 'branch_info_save'%}",
+   type:'POST',
+   data:{
+   csrfmiddlewaretoken: '{{ csrf_token }}',
+   name:$('#b_name').val(),
+   short:$('#b_short').val(),
+   address:$('#b_address').val(),
+   phone:$('#b_phone').val(),
+   fax:$('#b_fax').val(),
+   email:$('#b_email').val()
+
+   },
+   success:function(response){
+    massage=response.mess;
+    $('#alarts').html('<div class="alert alert-success" role="alert">'+massage+'</div>');
+
+    },
+    error:function(response){
+    $('#alarts').html('<div class="alert alert-danger" role="alert">Data Not Save</div>');
+    }
+   });
+
+});
+
+
+
+</script>
+{%endblock%}
