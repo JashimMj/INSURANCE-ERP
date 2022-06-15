@@ -17,6 +17,16 @@
     <link href="{%static 'assets/css/style.css'%}" rel="stylesheet"/>
     <!-- You can choose a theme from css/styles instead of get all themes -->
     <link href="{%static 'assets/css/styles/all-themes.css'%}" rel="stylesheet"/>
+
+    <link href="{%static 'assets/js/bundles/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css'%}" rel="stylesheet" />
+    <link href="../../assets/js/bundles/multiselect/css/multi-select.css" rel="stylesheet">
+    <!-- Plugins Core Css -->
+    <link href="{%static 'assets/css/common.min.css'%}" rel="stylesheet">
+    <link href="{%static 'assets/css/form.min.css'%}" rel="stylesheet">
+    <!-- Custom Css -->
+   <link href="{%static 'assets/css/style.css'%}" rel="stylesheet">
+    <!-- You can choose a theme from css/styles instead of get all themes -->
+    <link href="{%static 'assets/css/styles/all-themes.css'%}" rel="stylesheet" />
     <link href="{%static 'my/my.css'%}" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -647,13 +657,21 @@
 
 {%endblock%}
     </section>
-<script src="{%static 'assets/js/common.min.js'%}"></script>
-<!-- Custom Js -->
-<script src="{%static 'assets/js/admin.js'%}"></script>
-<script src="{%static 'assets/js/bundles/echart/echarts.js'%}"></script>
-<script src="{%static 'assets/js/bundles/apexcharts/apexcharts.min.js'%}"></script>
-<script src="{%static 'assets/js/pages/index.js'%}"></script>
-<script src="{%static 'assets/js/pages/todo/todo.js'%}"></script>
+   <script src="{%static 'assets/js/common.min.js'%}"></script>
+    <script src="{%static 'assets/js/bundles/flatpickr.min.js'%}"></script>
+    <script src="{%static 'assets/js/bundles/dropzone.js'%}"></script>
+    <script src="{%static 'assets/js/bundles/jquery.inputmask.bundle.min.js'%}"></script>
+    <script src="{%static 'assets/js/bundles/select2.min.js'%}"></script>
+    <script src="{%static 'assets/js/bundles/jquery.spinner.js'%}"></script>
+    <script src="{%static 'assets/js/bundles/bootstrap-tagsinput.js'%}"></script>
+    <script src="{%static 'assets/js/bundles//multiselect/js/jquery.multi-select.js'%}"></script>
+    <script src="{%static 'assets/js/bundles/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js'%}"></script>
+    <!-- Custom Js -->
+    <script src="{%static 'assets/js/admin.js'%}"></script>
+    <script src="{%static 'assets/js/pages/forms/selectitem-data.js'%}"></script>
+    <script src="{%static '/assets/js/pages/forms/advanced-form-elements.js'%}"></script>
+
+<script src="{%static 'assets/js/pages/forms/dropzone-data.js'%}"></script>
 </body>
 
 </html>
